@@ -1,4 +1,4 @@
-package dataStr_v2.queue;
+package BagsQueueStacks;
 
 public class Queue <Item>{
 
@@ -24,7 +24,7 @@ public class Queue <Item>{
         Node oldLast = last;
         last = new Node();
         last.item = text;
-        first.next = null;
+        last.next = null;
         if(isEmpty()) first = last;
         else oldLast.next = last;
         N++;

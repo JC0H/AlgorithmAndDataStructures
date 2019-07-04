@@ -1,9 +1,6 @@
-package qa.LeftParantheses;
+package BagsQueueStacks;
 
-import dataStr_v2.stack.Stack;
-
-
-public class ParanthesesAdder {
+public class _09_RightParatheses {
 
     Stack<String> stack =  new Stack<>();
 
@@ -18,17 +15,17 @@ public class ParanthesesAdder {
             }else if (isArithmeticalOperation(c)){
                 stack.push(Character.toString(c));
                 arithmeticalOps++;
-            }else if (isRightBrace(c) && (digits == 2 && arithmeticalOps == 1)){
+            }else if (isRightBrace(c) && (digits == 2)){
                 String secondNumber = stack.pop();
                 String arithmOp = stack.pop();
                 String firstNumber = stack.pop();
                 String expression = "( " + firstNumber + " " + arithmOp + " " + secondNumber + " " + c;
-                stack.push(Character.toString(c));
+                stack.push(expression);
                 digits = 0;
                 arithmeticalOps = 0;
             }
         }
-        return data;
+        return stack.toString();
     }
 
     public boolean isDigit(char data){
@@ -55,4 +52,5 @@ public class ParanthesesAdder {
     public boolean isSpace(char data){
         return data == ' ';
     }
+
 }
