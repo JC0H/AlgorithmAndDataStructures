@@ -53,14 +53,16 @@ public class Stack <Item> implements Iterable<Item>{
     private class ListIterator implements Iterator<Item> {
 
         private Node current = first;
+
         public boolean hasNext() {
             return current != null;
         }
-        public Item next()
-        {
+
+        public Item next() {
             Item item = current.item;
             current = current.node;
             return item;
         }
+
     }
 }
