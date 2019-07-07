@@ -72,7 +72,7 @@ public class Stack <Item> implements Iterable<Item>{
     /*Write a method removeAfter() that takes a linked-list Node as argument and
       removes the node following the given one (and does nothing if the argument or the next
       field in the argument node is null).*/
-    public void removeAfter(Stack<String> stack, Node node){
+    public void removeAfter( Node node){
         node = first;
         if (node == null || node.node == null)
             return;
