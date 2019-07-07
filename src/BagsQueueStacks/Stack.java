@@ -53,11 +53,20 @@ public class Stack <Item> implements Iterable<Item>{
         }
 
         n.node = n.node.node;
-
-
-
-
         System.out.println();
+    }
+
+    /*Write a method find() that takes a linked list and a string key as arguments
+      and returns true if some node in the list has key as its item field, false otherwise.*/
+    public boolean find(Stack<String> stack, String key){
+         Node n = first;
+
+         for (int i = 0; i < stack.size(); i ++){
+            n = n.node;
+            if (n.item.toString() == key)
+                return true;
+         }
+         return false;
     }
 
     public String toString() {

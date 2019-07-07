@@ -13,8 +13,7 @@ public class Audit {
         stack.push("My");
         stack.push("Friend");
 
-        _12_StackCopy copy = new _12_StackCopy();
-        String list  = copy.copy(stack);
-        System.out.println(list);
+        boolean res = stack.find(stack,"Friend");
+        System.out.println(res);
     }
 }
