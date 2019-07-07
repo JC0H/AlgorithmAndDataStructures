@@ -8,12 +8,12 @@ public class Stack <Item> implements Iterable<Item>{
     private int N;
 
 
-    private class Node{
+    public class Node{
         Node node;
         Item item;
     }
 
-    public int size(){
+    public int size() {
         return N;
     }
 
@@ -36,6 +36,28 @@ public class Stack <Item> implements Iterable<Item>{
         first = first.node;
         N--;
         return item;
+    }
+
+    /*
+     * Write a method delete() that takes an int argument k and deletes
+     * the kth element in a linked list, if it exists.
+     */
+    public void delete(int k){
+        if(size() <= k ) {
+            System.out.println("There is no " + k  +" element in stack");
+        }
+
+        Node n = first;
+        for (int i = 0; i < k; i++){
+            n = n.node;
+        }
+
+        n.node = n.node.node;
+
+
+
+
+        System.out.println();
     }
 
     public String toString() {
