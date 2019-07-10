@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2f90273-cdd1-48cc-a933-09b9c2eb2548" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/0notation" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/algorithms/0notation" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/algorithms/UnionFind/UF.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/algorithms/UnionFind/UFQuickUnion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UnionFind/UF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UnionFind/UFQuickUnion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/BagsQueueStacks/Stack$ListIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithms/BagsQueueStacks/Stack$ListIterator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/algorithms/BagsQueueStacks/Stack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/algorithms/BagsQueueStacks/Stack.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +23,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/0notation">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="269">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UnionFind/UF.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+              <folding>
+                <element signature="e#341#342#0" expanded="true" />
+                <element signature="e#370#371#0" expanded="true" />
+                <element signature="e#406#407#0" expanded="true" />
+                <element signature="e#449#450#0" expanded="true" />
+                <element signature="e#483#484#0" expanded="true" />
+                <element signature="e#510#511#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/UnionFind/UFQuickUnion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="e#349#350#0" expanded="true" />
+                <element signature="e#377#378#0" expanded="true" />
+                <element signature="e#423#424#0" expanded="true" />
+                <element signature="e#464#465#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,6 +101,8 @@
         <option value="$PROJECT_DIR$/src/BagsQueueStacks/Audit.java" />
         <option value="$PROJECT_DIR$/src/BagsQueueStacks/Stack.java" />
         <option value="$PROJECT_DIR$/src/0notation" />
+        <option value="$PROJECT_DIR$/src/UnionFind/UF.java" />
+        <option value="$PROJECT_DIR$/src/UnionFind/UFQuickUnion.java" />
       </list>
     </option>
   </component>
@@ -80,6 +120,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -92,18 +134,10 @@
               <item name="AlgorithmAndDataStructures" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="AlgorithmAndDataStructures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AlgorithmAndDataStructures" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="BagsQueueStacks" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -133,7 +167,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Audit">
+  <component name="RunManager" selected="Application.UFQuickUnion">
     <configuration name="Audit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BagsQueueStacks.Audit" />
       <module name="algorithms" />
@@ -173,9 +207,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StdOut" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dataStr_v2.StdOut" />
+    <configuration name="UFQuickUnion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UnionFind.UFQuickUnion" />
       <module name="algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UnionFind.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -195,11 +235,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UFQuickUnion" />
         <item itemvalue="Application.Audit" />
         <item itemvalue="Application._04_Parentheses" />
         <item itemvalue="Application.ParanthesesAudit" />
         <item itemvalue="Application.StackAudit" />
-        <item itemvalue="Application.StdOut" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +261,9 @@
       <workItem from="1562262940526" duration="9275000" />
       <workItem from="1562354240876" duration="6446000" />
       <workItem from="1562497209422" duration="8925000" />
-      <workItem from="1562607051344" duration="1277000" />
+      <workItem from="1562607051344" duration="1916000" />
+      <workItem from="1562694810146" duration="1191000" />
+      <workItem from="1562728923996" duration="5652000" />
     </task>
     <task id="LOCAL-00001" summary="stack and queue">
       <created>1562100294387</created>
@@ -286,16 +328,23 @@
       <option name="project" value="LOCAL" />
       <updated>1562522284966</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="0 notation explaniation">
+      <created>1562615416037</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1562615416038</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49665000" />
+    <option name="totallyTimeSpent" value="57147000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="58" y="-8" width="1316" height="784" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22213376" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22850318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -339,7 +388,8 @@
     <MESSAGE value="solve 21 exc" />
     <MESSAGE value="solve 24 exc" />
     <MESSAGE value="solve 24 exc (delete Stack args from function)" />
-    <option name="LAST_COMMIT_MESSAGE" value="solve 24 exc (delete Stack args from function)" />
+    <MESSAGE value="0 notation explaniation" />
+    <option name="LAST_COMMIT_MESSAGE" value="0 notation explaniation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -361,6 +411,12 @@
           <line>13</line>
           <properties />
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/UnionFind/UFQuickUnion.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -463,10 +519,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/UnionFind/UF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding>
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/0notation">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="269">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UnionFind/UFQuickUnion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
