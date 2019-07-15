@@ -3,12 +3,12 @@ package Sorting;
 public class Selection {
 
     public void sort(Comparable[] a){
-        for (int i = 0; i < a.length; i++){
-            int min = i;
-            for (int j = i+1; j < a.length; j++)
-                if (less(a[j],a[min])) min = j;
-            exch(a,i,min);
-        }
+       for (int i = 0; i < a.length; i++){
+           int min = i;
+           for (int j = i +1; j < a.length; j++)
+               if (less(a[j],a[min])) min = j;
+           exch(a,i,min);
+       }
     }
 
     public void print(Comparable[] l){
