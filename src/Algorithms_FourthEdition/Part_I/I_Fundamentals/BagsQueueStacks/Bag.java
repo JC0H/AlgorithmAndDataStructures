@@ -1,9 +1,16 @@
 package Algorithms_FourthEdition.Part_I.I_Fundamentals.BagsQueueStacks;
 
-public class Bag<Item> {
+import java.util.Iterator;
+
+public class Bag<Item> implements Iterable<Integer> {
 
     private int N;
     private Node first;
+
+    @Override
+    public Iterator<Integer> iterator() {
+        return null;
+    }
 
     private class Node{
         Item item;

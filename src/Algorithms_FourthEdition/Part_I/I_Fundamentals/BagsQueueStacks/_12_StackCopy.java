@@ -8,6 +8,8 @@ without changing the basic API.
 * */
 
 
+import Algorithms_FourthEdition.Part_I.I_Fundamentals.II_Stack.Stack;
+
 import java.util.Iterator;
 
 public class _12_StackCopy {

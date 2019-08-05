@@ -1,4 +1,4 @@
-package Algorithms_FourthEdition.Part_I.I_Fundamentals.BagsQueueStacks;
+package Algorithms_FourthEdition.Part_I.I_Fundamentals.II_Stack;
 
 import java.util.Iterator;
 
@@ -6,7 +6,6 @@ public class Stack <Item> implements Iterable<Item>{
 
     private Node first;
     private int N;
-
 
     public class Node{
         Node node;
@@ -31,6 +30,9 @@ public class Stack <Item> implements Iterable<Item>{
     }
 
     //Remove item from top of stack
+    /*This operation is even easier: simply assign to first the value first.next. Normally, you would retrieve the value of
+      the item (by assigning it to some variable of type Item) before doing this assignment, because once you change
+      the value of first, you may not have any access to the node to which it was referring.*/
     public Item pop(){
         Item item = first.item;
         first = first.node;

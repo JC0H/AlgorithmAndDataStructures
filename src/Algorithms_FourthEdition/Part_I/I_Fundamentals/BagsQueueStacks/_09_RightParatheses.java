@@ -1,5 +1,7 @@
 package Algorithms_FourthEdition.Part_I.I_Fundamentals.BagsQueueStacks;
 
+import Algorithms_FourthEdition.Part_I.I_Fundamentals.II_Stack.Stack;
+
 public class _09_RightParatheses {
 
     Stack<String> stack =  new Stack<>();

@@ -6,6 +6,8 @@ and uses a stack to determine whether its parentheses are properly balanced. For
 your program should print true for [()]{}{[()()]()} and false for [(]).
 * */
 
+import Algorithms_FourthEdition.Part_I.I_Fundamentals.II_Stack.Stack;
+
 public class _04_Parentheses {
 
     private Stack<String> stack = new Stack<>();
