@@ -11,16 +11,16 @@ public class Queue <Item>{
         Item item;
     }
 
-    private boolean isEmpty(){
+    public boolean isEmpty(){
         return N==0;
     }
 
-    private int size(){
+    public int size(){
         return N;
     }
 
     //add item to the end of the queue
-    private void enqueue(Item text){
+    public void enqueue(Item text){
         Node oldLast = last;
         last = new Node();
         last.item = text;
@@ -31,7 +31,7 @@ public class Queue <Item>{
     }
 
     //Remove item from the beginning of the list
-    private Item dequeue(){
+    public Item dequeue(){
         Item item = first.item;
         first = first.next;
         if (isEmpty()) last = null;
