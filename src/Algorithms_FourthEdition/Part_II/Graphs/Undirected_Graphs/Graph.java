@@ -1,4 +1,4 @@
-package Algorithms_FourthEdition.Part_II.Graphs;
+package Algorithms_FourthEdition.Part_II.Graphs.Undirected_Graphs;
 
 import Algorithms_FourthEdition.Part_I.I_Fundamentals.BagsQueueStacks.Bag;
 

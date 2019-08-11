@@ -1,4 +1,4 @@
-package Algorithms_FourthEdition.Part_II.Graphs;
+package Algorithms_FourthEdition.Part_II.Graphs.Undirected_Graphs;
 
 public class CC {
     private boolean [] marked;
