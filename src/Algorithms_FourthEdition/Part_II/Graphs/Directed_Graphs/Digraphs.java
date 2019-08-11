@@ -14,16 +14,16 @@ public class Digraphs {
         }
     }
 
-    void addEdge(int v, int w){  // add a directed edge v -> w
+    public void addEdge(int v, int w){  // add a directed edge v -> w
         adj[v].add(w);
         //adj[w].add(v);    this only difference between di and not di graphs
     }
 
-    Iterable<Integer> adj(int v){  // vertices pointing from v
+    public Iterable<Integer> adj(int v){  // vertices pointing from v
         return adj[v];
     }
 
-    //int V(){ // count of vertices
-    //    return null;
-    //}
+    public int V(){ // count of vertices
+        return V;
+    }
 }
