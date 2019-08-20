@@ -1,7 +1,7 @@
 package Algorithms_FourthEdition.Part_II.Graphs.Directed_Graphs;
 
 public class DirectedDFS {
-    private boolean [] marked;
+    private boolean [] marked; //true if path from s
 
     public DirectedDFS(Digraphs G, int s){
         marked =  new boolean[G.V()];
