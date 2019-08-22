@@ -24,4 +24,40 @@ public class EdgeWeightedGraph {
         //return adj[v];
         return null;
     }
+
+    /**
+     * Returns all edges in this edge-weighted graph.
+     * To iterate over the edges in this edge-weighted graph, use foreach notation:
+     * {@code for (Edge e : G.edges())}.
+     *
+     * @return all edges in this edge-weighted graph, as an iterable
+     */
+    public Iterable<Edge> edges() {
+        Bag<Edge> list = new Bag<Edge>();
+        for (int v = 0; v < V; v++) {
+            int selfLoops = 0;
+            for (Edge e : adj(v)) {
+                if (e.other(v) > v) {
+                    list.add(e);
+                }
+                // add only one copy of each self loop (self loops will be consecutive)
+                else if (e.other(v) == v) {
+                    if (selfLoops % 2 == 0) list.add(e);
+                    selfLoops++;
+                }
+            }
+        }
+        //return list;
+        return null;
+    }
+
+    /**
+     * Returns the number of vertices in this edge-weighted graph.
+     *
+     * @return the number of vertices in this edge-weighted graph
+     */
+    public int V() {
+        return V;
+    }
 }
+
