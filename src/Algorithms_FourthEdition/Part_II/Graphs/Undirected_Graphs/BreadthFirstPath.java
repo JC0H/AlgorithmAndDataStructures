@@ -1,6 +1,6 @@
 package Algorithms_FourthEdition.Part_II.Graphs.Undirected_Graphs;
 
-import Algorithms_FourthEdition.Part_I.I_Fundamentals.BagsQueueStacks.Queue;
+import Algorithms_FourthEdition.Part_I.I_Fundamentals.lll_Queue.Queue;
 
 public class BreadthFirstPath {
     private boolean[] marked;

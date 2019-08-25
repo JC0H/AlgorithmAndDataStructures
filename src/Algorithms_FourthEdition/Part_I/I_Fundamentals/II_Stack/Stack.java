@@ -1,15 +1,24 @@
 package Algorithms_FourthEdition.Part_I.I_Fundamentals.II_Stack;
 
 import java.util.Iterator;
+import java.util.NoSuchElementException;
+
+/*A pushdown stack (or just a stack) is a collection that is based on the last-in-first-out (LIFO) policy.
+For example, many people organize their email as a stack— they push messages on the top when they are received
+and pop them from the top when they read them, with most recently received first (last in, first out).
+The LIFO policy offered by a stack provides just the behavior that you expect. When a client iterates through
+the items in a stack with the foreach construct, the items are processed in the reverse of the order in
+which they were added.
+*/
 
 public class Stack <Item> implements Iterable<Item>{
 
-    private Node first;
+    private Node<Item> first;
     private int N;
 
-    public class Node{
-        Node node;
-        Item item;
+    public class Node<Item>{
+        private Node node;
+        private Item item;
     }
 
     public int size() {
@@ -22,7 +31,7 @@ public class Stack <Item> implements Iterable<Item>{
 
     //add item to top of stack
     public void push(Item text){
-        Node newNode = first;
+        Node<Item> newNode = first;
         first = new Node();
         first.item = text;
         first.node = newNode;
@@ -91,22 +100,30 @@ public class Stack <Item> implements Iterable<Item>{
     }
 
     public Iterator<Item> iterator() {
-        return new ListIterator();
+        return new ListIterator(first);
     }
 
+    // an iterator, doesn't implement remove() since it's optional
     private class ListIterator implements Iterator<Item> {
+        private Node<Item> current;
 
-        private Node current = first;
+        public ListIterator(Node<Item> first) {
+            current = first;
+        }
 
         public boolean hasNext() {
             return current != null;
         }
 
+        public void remove() {
+            throw new UnsupportedOperationException();
+        }
+
         public Item next() {
+            if (!hasNext()) throw new NoSuchElementException();
             Item item = current.item;
             current = current.node;
             return item;
         }
-
     }
 }

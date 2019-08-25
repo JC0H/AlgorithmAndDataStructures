@@ -1,7 +1,7 @@
 package Algorithms_FourthEdition.Part_II.Graphs.Minimum_Spanning_Trees;
 
 import Algorithms_FourthEdition.Part_I.III_Searching.UnionFind.UF;
-import Algorithms_FourthEdition.Part_I.I_Fundamentals.BagsQueueStacks.Queue;
+import Algorithms_FourthEdition.Part_I.I_Fundamentals.lll_Queue.Queue;
 import Algorithms_FourthEdition.Part_I.I_Fundamentals.BagsQueueStacks.dataStructures.MinPQ;
 
 public class KrushkalMST {

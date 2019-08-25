@@ -1,6 +1,6 @@
 package Algorithms_FourthEdition.Part_II.Graphs.Minimum_Spanning_Trees;
 
-import Algorithms_FourthEdition.Part_I.I_Fundamentals.BagsQueueStacks.Bag;
+import Algorithms_FourthEdition.Part_I.I_Fundamentals.I_Bags.Bag;
 
 public class EdgeWeightedGraph {
     private final int V;

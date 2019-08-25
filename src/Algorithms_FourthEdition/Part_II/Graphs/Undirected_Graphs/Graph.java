@@ -1,6 +1,6 @@
 package Algorithms_FourthEdition.Part_II.Graphs.Undirected_Graphs;
 
-import Algorithms_FourthEdition.Part_I.I_Fundamentals.BagsQueueStacks.Bag;
+import Algorithms_FourthEdition.Part_I.I_Fundamentals.I_Bags.Bag;
 
 public class Graph {
     private final int V;

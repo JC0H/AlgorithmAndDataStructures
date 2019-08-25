@@ -1,6 +1,6 @@
 package Algorithms_FourthEdition.Part_II.Graphs.ShortestPaths;
 
-import Algorithms_FourthEdition.Part_I.I_Fundamentals.BagsQueueStacks.Bag;
+import Algorithms_FourthEdition.Part_I.I_Fundamentals.I_Bags.Bag;
 
 public class EdgeWeightedDigraph {
     private final int V;
@@ -17,6 +17,4 @@ public class EdgeWeightedDigraph {
         int v = e.from();
         adj[v].add(e);
     }
-
-
 }
