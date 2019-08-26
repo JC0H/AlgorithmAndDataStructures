@@ -1,14 +1,9 @@
-package Algorithms_FourthEdition.Part_I.II_Sorting;
+package Algorithms_FourthEdition.Part_I.II_Sorting.l_Elementary_Sorts;
 
-public class Selection {
+public class Example {
 
     public void sort(Comparable[] a){
-       for (int i = 0; i < a.length; i++){
-           int min = i;
-           for (int j = i +1; j < a.length; j++)
-               if (less(a[j],a[min])) min = j;
-           exch(a,i,min);
-       }
+
     }
 
     public void print(Comparable[] l){
@@ -31,4 +26,5 @@ public class Selection {
             if(less(a[i],a[i-1])) return false;
         return true;
     }
+
 }

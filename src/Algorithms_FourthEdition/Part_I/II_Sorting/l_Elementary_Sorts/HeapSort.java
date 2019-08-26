@@ -1,4 +1,4 @@
-package Algorithms_FourthEdition.Part_I.II_Sorting;
+package Algorithms_FourthEdition.Part_I.II_Sorting.l_Elementary_Sorts;
 
 public class HeapSort {
 

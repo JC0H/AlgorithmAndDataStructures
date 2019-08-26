@@ -1,6 +1,11 @@
-package Algorithms_FourthEdition.Part_I.II_Sorting;
+package Algorithms_FourthEdition.Part_I.II_Sorting.ll_Quick_Sort;
 
-import java.util.Random;
+/*
+Quicksort is popular because it is not difficult to implement, works well for a variety of different
+kinds of input data, and is substantially faster than any other sorting method in typical applications.
+It is in-place (uses only a small auxiliary stack), requires time proportional to N log N on the average
+to sort N items, and has an extremely short inner loop.
+*/
 
 public class Quick {
 

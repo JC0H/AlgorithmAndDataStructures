@@ -1,9 +1,16 @@
-package Algorithms_FourthEdition.Part_I.II_Sorting;
+package Algorithms_FourthEdition.Part_I.II_Sorting.l_Elementary_Sorts;
 
-public class Example {
+public class Insertion {
 
     public void sort(Comparable[] a){
-
+        for(int i = 0; i < a.length; i++){
+            for (int j = 1; j > 0; j--){
+                if (less(a[j],a[j-1]))
+                    exch(a,j,j-1);
+                else
+                    break;
+            }
+        }
     }
 
     public void print(Comparable[] l){
@@ -26,5 +33,4 @@ public class Example {
             if(less(a[i],a[i-1])) return false;
         return true;
     }
-
 }
